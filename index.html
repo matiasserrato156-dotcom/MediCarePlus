@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="MediCare Plus: una experiencia de atención médica cercana y clara. Agenda tu cita de demostración en tres pasos. Proyecto académico ADSO con datos ficticios."
+    />
+    <meta name="theme-color" content="#f5fafb" />
+    <meta property="og:title" content="MediCare Plus | Cuidado cercano, claro y humano" />
+    <meta
+      property="og:description"
+      content="Propuesta académica de agendamiento médico: especialidades, equipo, disponibilidad y confirmación en una experiencia accesible."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>MediCare Plus | Cuidado cercano, claro y humano</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span data-scroll-progress></span>
+    </div>
+
+    <noscript>
+      <p class="noscript-note">
+        Activa JavaScript para usar la agenda de demostración. El contenido
+        informativo de la página sigue siendo visible.
+      </p>
+    </noscript>
+
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2" opacity=".45" />
+            </svg>
+          </span>
+          <span class="brand-text">
+            MediCare <span>Plus</span>
+            <small>Cuidado cercano</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navegacion-principal"
+          aria-label="Abrir menú de navegación"
+          data-menu-toggle
+        >
+          <svg data-menu-open-icon viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg data-menu-close-icon class="hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path stroke-linecap="round" d="m6 6 12 12M18 6 6 18" />
+          </svg>
+        </button>
+
+        <nav id="navegacion-principal" class="main-nav" aria-label="Navegación principal" data-navigation>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#servicios">Especialidades</a></li>
+            <li><a class="nav-link" href="#equipo">Equipo</a></li>
+            <li><a class="nav-link" href="#testimonios">Experiencias</a></li>
+            <li><a class="nav-link" href="#contacto">Contacto</a></li>
+            <li class="nav-tools">
+              <button class="nav-link nav-action" type="button" data-open-appointments>
+                Mis citas
+                <span class="count-badge" data-appointments-count hidden>0</span>
+              </button>
+              <button class="button button-primary button-sm nav-cta" type="button" data-open-booking>
+                Agendar cita <span aria-hidden="true">↗</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-three" aria-hidden="true"></div>
+
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow eyebrow-pill">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                Atención pensada para ti
+              </p>
+              <h1 id="hero-title" class="hero-title">
+                Tu salud merece <span class="hero-accent">tiempo,</span> confianza y cuidado.
+              </h1>
+              <p class="hero-lead">
+                Una propuesta de atención médica clara, humana y cercana. Elige
+                tu especialidad, encuentra un horario y vive la experiencia de
+                agendar en menos de un minuto.
+              </p>
+
+              <div class="hero-actions">
+                <button class="button button-primary" type="button" data-open-booking>
+                  Agendar mi cita <span aria-hidden="true">→</span>
+                </button>
+                <a class="button button-secondary" href="#como-funciona">Ver cómo funciona</a>
+              </div>
+
+              <ul class="hero-trust" aria-label="Características de la demostración">
+                <li><span class="trust-check" aria-hidden="true">✓</span> Datos ficticios, sin registro real</li>
+                <li><span class="trust-check" aria-hidden="true">✓</span> Confirmación inmediata</li>
+                <li><span class="trust-check" aria-hidden="true">✓</span> Atención de lunes a sábado</li>
+              </ul>
+
+              <dl class="hero-metrics" aria-label="Cifras de la propuesta">
+                <div class="metric">
+                  <dt class="metric-value">4</dt>
+                  <dd class="metric-label">especialidades</dd>
+                </div>
+                <div class="metric">
+                  <dt class="metric-value">30 min</dt>
+                  <dd class="metric-label">por consulta</dd>
+                </div>
+                <div class="metric">
+                  <dt class="metric-value">90</dt>
+                  <dd class="metric-label">días para agendar</dd>
+                </div>
+                <div class="metric">
+                  <dt class="metric-value">100%</dt>
+                  <dd class="metric-label">transparente</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="hero-side" data-reveal style="--reveal-delay: 120ms">
+              <div class="hero-art">
+                <div class="art-backdrop" aria-hidden="true"></div>
+                <div class="art-center" aria-hidden="true">
+                  <div class="art-sun"></div>
+                  <svg viewBox="0 0 440 420" class="doctor-illustration" aria-hidden="true">
+                    <ellipse cx="220" cy="376" rx="150" ry="18" fill="#0b4d66" opacity=".10" />
+                    <path d="M94 367c4-69 22-126 65-145 22-10 42-13 61-13s39 3 61 13c43 19 61 76 65 145H94Z" fill="#d5f1ed" />
+                    <path d="M157 223c8 30 25 52 63 52s55-22 63-52l-25-15h-76l-25 15Z" fill="#fff" />
+                    <path d="M185 214v43l35 27 35-27v-43" fill="#f1b99d" />
+                    <path d="M144 366V262l42-28 34 28 34-28 42 28v104H144Z" fill="#fff" />
+                    <path d="m185 233 35 45 35-45 20 15-25 44h-60l-25-44 20-15Z" fill="#0f718c" />
+                    <path d="M205 277h30l-7 23h-16l-7-23Z" fill="#f3c4a8" />
+                    <path d="M208 297h24l-12 49-12-49Z" fill="#0f718c" />
+                    <path d="M188 114c0-41 26-68 66-68 37 0 65 25 65 66v39c0 48-32 77-70 77-34 0-61-31-61-74v-40Z" fill="#5a352c" />
+                    <path d="M195 128c0-34 20-53 54-53s54 19 54 53v43c0 34-23 59-54 59s-54-25-54-59v-43Z" fill="#f4c7a9" />
+                    <path d="M189 133c-2-49 26-82 69-82 35 0 63 26 64 65-16-7-27-17-35-32-17 20-48 31-96 29l-2 20Z" fill="#5a352c" />
+                    <path d="M217 148c6-5 13-5 19 0M265 148c6-5 13-5 19 0" stroke="#56392e" stroke-width="3" stroke-linecap="round" />
+                    <circle cx="229" cy="158" r="3" fill="#263845" />
+                    <circle cx="275" cy="158" r="3" fill="#263845" />
+                    <path d="M239 181c8 7 18 7 26 0" stroke="#b56f62" stroke-width="3" stroke-linecap="round" />
+                    <path d="M151 287h31v43h-31zM258 287h31v43h-31z" fill="#e7f5f2" />
+                    <path d="M176 296h10v17h-10zM263 296h10v17h-10z" fill="#0f718c" />
+                    <path d="M145 305h44M256 305h37" stroke="#c7dfda" stroke-width="2" />
+                    <path d="M210 355h20" stroke="#b9d7d2" stroke-width="4" stroke-linecap="round" />
+                  </svg>
+                  <span class="art-spark spark-one" aria-hidden="true">✦</span>
+                  <span class="art-spark spark-two" aria-hidden="true">✧</span>
+                </div>
+
+                <div class="art-card art-card-top">
+                  <span class="art-icon bg-mint text-success" aria-hidden="true">♡</span>
+                  <span><strong>Cuidado integral</strong><small>Un equipo a tu lado</small></span>
+                </div>
+
+                <button class="art-card art-card-bottom" type="button" data-next-booking data-open-booking>
+                  <span class="art-pulse" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M3 12h4l2-6 4 12 2-6h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  <span>
+                    <strong>Próxima cita disponible</strong>
+                    <small data-next-availability>Consultando agenda…</small>
+                  </span>
+                  <span class="art-arrow" aria-hidden="true">↗</span>
+                </button>
+
+                <div class="art-caption">
+                  <span class="caption-check" aria-hidden="true">✓</span>
+                  <span><strong>Una atención más humana</strong><small>Escucha, orientación y confianza</small></span>
+                </div>
+              </div>
+
+              <div class="hero-badge-row">
+                <span class="trust-pill"><span class="status-dot" aria-hidden="true"></span> Agenda en línea</span>
+                <span class="trust-pill">Respuesta inmediata</span>
+                <span class="trust-pill">Sin datos reales</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-form-wrap" data-reveal style="--reveal-delay: 80ms">
+            <form class="quick-form" data-quick-form novalidate aria-labelledby="quick-form-title">
+              <div class="quick-form-head">
+                <span class="quick-form-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="5" width="18" height="16" rx="3" />
+                    <path d="M8 3v4M16 3v4M3 10h18M8 15h3" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <div>
+                  <h2 id="quick-form-title">Agenda tu cita de demostración</h2>
+                  <p>Elige especialidad y fecha. Te mostramos los horarios disponibles al instante.</p>
+                </div>
+              </div>
+
+              <div class="quick-form-fields">
+                <label class="field">
+                  <span class="field-label">Especialidad</span>
+                  <select id="quick-especialidad" class="input select" data-quick-specialty data-specialty-select required>
+                    <option value="">Selecciona una especialidad</option>
+                  </select>
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Fecha preferida</span>
+                  <input id="quick-fecha" class="input" type="date" data-quick-date required />
+                </label>
+
+                <button class="button button-primary quick-submit" type="submit">
+                  Ver disponibilidad <span aria-hidden="true">→</span>
+                </button>
+              </div>
+
+              <p class="field-error quick-error" id="quick-error" data-quick-error role="alert" hidden></p>
+              <p class="quick-form-note">
+                Proyecto académico: la cita se guarda solo en este navegador y no se envía a ningún servicio real.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="como-funciona" class="section-space section-soft" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow eyebrow-pill">Así de simple</p>
+            <h2 id="how-title">Tu cita, en tres pasos</h2>
+            <p>
+              Diseñamos un recorrido corto y claro. Sin formularios eternos ni
+              letras pequeñas: solo la información que necesitas para elegir.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card" data-reveal>
+              <span class="step-number" aria-hidden="true">01</span>
+              <span class="step-icon step-icon-blue" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" />
+                  <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </span>
+              <h3>Elige especialidad y fecha</h3>
+              <p>Cuatro áreas de atención y un calendario de hasta 90 días para encontrar el momento que mejor te funcione.</p>
+            </article>
+
+            <article class="step-card" data-reveal style="--reveal-delay: 90ms">
+              <span class="step-number" aria-hidden="true">02</span>
+              <span class="step-icon step-icon-peach" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2" />
+                  <path d="M16 9v7l5 3" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h3>Selecciona tu horario</h3>
+              <p>Verás únicamente las franjas libres de 30 minutos. El sistema asigna un profesional disponible para ti.</p>
+            </article>
+
+            <article class="step-card" data-reveal style="--reveal-delay: 180ms">
+              <span class="step-number" aria-hidden="true">03</span>
+              <span class="step-icon step-icon-mint" aria-hidden="true">
+                <svg viewBox="0 0 32 32" fill="none">
+                  <path d="m7 17 6 6L26 10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+                  <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" opacity=".45" />
+                </svg>
+              </span>
+              <h3>Confirma y guarda</h3>
+              <p>Completa tus datos de demostración, revisa el resumen y recibe un código de cita. También puedes añadirla a tu calendario.</p>
+            </article>
+          </div>
+
+          <div class="how-note" data-reveal>
+            <p><strong>Todo claro desde el inicio.</strong> Esta experiencia es una simulación académica: no se agenda una consulta real ni se envían correos.</p>
+            <button class="text-link" type="button" data-open-booking>Probar la agenda ahora <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section-space bg-white" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow eyebrow-pill">Atención para cada etapa</p>
+            <h2 id="services-title">Especialidades que cuidan de ti</h2>
+            <p>
+              Orientación profesional en áreas esenciales de la salud, con una
+              mirada cercana a cada persona y a su historia.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card" data-reveal>
+              <div class="service-top">
+                <span class="service-icon service-blue" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M16 5v22M5 16h22" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
+                    <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </span>
+                <span class="service-index" aria-hidden="true">01</span>
+              </div>
+              <h3>Medicina general</h3>
+              <p>Un primer espacio para revisar tu salud, resolver inquietudes y recibir orientación integral.</p>
+              <ul class="service-tags" aria-label="Incluye">
+                <li>Chequeo general</li>
+                <li>Prevención</li>
+              </ul>
+              <button class="text-link" type="button" data-open-booking data-specialty="medicina-general">
+                Consultar disponibilidad <span aria-hidden="true">→</span>
+              </button>
+            </article>
+
+            <article class="service-card" data-reveal style="--reveal-delay: 70ms">
+              <div class="service-top">
+                <span class="service-icon service-peach" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M16 27s-10-5.7-10-13a5.8 5.8 0 0 1 10-4 5.8 5.8 0 0 1 10 4c0 7.3-10 13-10 13Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                    <path d="M9 17h4l2-4 3 7 2-3h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="service-index" aria-hidden="true">02</span>
+              </div>
+              <h3>Pediatría</h3>
+              <p>Acompañamiento atento para el crecimiento y bienestar de niñas, niños y sus familias.</p>
+              <ul class="service-tags" aria-label="Incluye">
+                <li>Crecimiento</li>
+                <li>Familias</li>
+              </ul>
+              <button class="text-link" type="button" data-open-booking data-specialty="pediatria">
+                Consultar disponibilidad <span aria-hidden="true">→</span>
+              </button>
+            </article>
+
+            <article class="service-card" data-reveal style="--reveal-delay: 140ms">
+              <div class="service-top">
+                <span class="service-icon service-lilac" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M4 17h6l3-9 6 17 3-8h6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" />
+                  </svg>
+                </span>
+                <span class="service-index" aria-hidden="true">03</span>
+              </div>
+              <h3>Cardiología</h3>
+              <p>Prevención y orientación especializada para cuidar la salud de tu corazón.</p>
+              <ul class="service-tags" aria-label="Incluye">
+                <li>Prevención</li>
+                <li>Hábitos</li>
+              </ul>
+              <button class="text-link" type="button" data-open-booking data-specialty="cardiologia">
+                Consultar disponibilidad <span aria-hidden="true">→</span>
+              </button>
+            </article>
+
+            <article class="service-card" data-reveal style="--reveal-delay: 210ms">
+              <div class="service-top">
+                <span class="service-icon service-mint" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="M10 6c-4 0-6 3-5 8l3 12c.5 2 2.5 2 3.3.2L14 20h4l2.7 6.2c.8 1.8 2.8 1.8 3.3-.2l3-12c1-5-1-8-5-8-2 0-4 1.5-6 1.5S12 6 10 6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="service-index" aria-hidden="true">04</span>
+              </div>
+              <h3>Odontología</h3>
+              <p>Cuidado oral preventivo y atención pensada para que sonrías con tranquilidad.</p>
+              <ul class="service-tags" aria-label="Incluye">
+                <li>Higiene oral</li>
+                <li>Prevención</li>
+              </ul>
+              <button class="text-link" type="button" data-open-booking data-specialty="odontologia">
+                Consultar disponibilidad <span aria-hidden="true">→</span>
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipo" class="section-space" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section-heading section-heading-split" data-reveal>
+            <div>
+              <p class="eyebrow eyebrow-pill">Personas que te acompañan</p>
+              <h2 id="team-title">Un equipo con vocación de cuidado</h2>
+              <p>
+                Perfiles ficticios creados para ilustrar la propuesta. Cada
+                tarjeta muestra especialidad, registro y horario de referencia.
+              </p>
+            </div>
+            <span class="demo-badge">Perfiles ficticios · proyecto académico</span>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card" data-medico-id="valentina-rios" data-reveal>
+              <div class="portrait portrait-blue" aria-hidden="true">
+                <span class="portrait-halo"></span>
+                <span class="portrait-person person-one"><i></i><b></b></span>
+                <span class="portrait-plus">+</span>
+              </div>
+              <div class="team-body">
+                <div class="team-heading">
+                  <div>
+                    <p class="team-specialty" data-medico-especialidad>Medicina general</p>
+                    <h3 data-medico-nombre>Dra. Valentina Ríos</h3>
+                  </div>
+                  <span class="team-badge" title="Habilitación vigente">✓</span>
+                </div>
+                <dl class="team-meta">
+                  <div><dt>Registro</dt><dd data-medico-registro>RM 105842</dd></div>
+                  <div><dt>Horario</dt><dd data-medico-horario>Lun–Vie · 8:00 a. m. – 12:00 m.</dd></div>
+                </dl>
+                <p class="team-note">Enfoque en prevención y cuidado integral.</p>
+                <button class="text-link" type="button" data-open-booking data-specialty="medicina-general">
+                  Ver horarios <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="team-card" data-medico-id="mateo-salazar" data-reveal style="--reveal-delay: 70ms">
+              <div class="portrait portrait-peach" aria-hidden="true">
+                <span class="portrait-halo"></span>
+                <span class="portrait-person person-two"><i></i><b></b></span>
+                <span class="portrait-plus">+</span>
+              </div>
+              <div class="team-body">
+                <div class="team-heading">
+                  <div>
+                    <p class="team-specialty" data-medico-especialidad>Pediatría</p>
+                    <h3 data-medico-nombre>Dr. Mateo Salazar</h3>
+                  </div>
+                  <span class="team-badge" title="Habilitación vigente">✓</span>
+                </div>
+                <dl class="team-meta">
+                  <div><dt>Registro</dt><dd data-medico-registro>RM 098415</dd></div>
+                  <div><dt>Horario</dt><dd data-medico-horario>Lun–Vie · 2:00 – 6:00 p. m.</dd></div>
+                </dl>
+                <p class="team-note">Acompañamiento cálido a familias.</p>
+                <button class="text-link" type="button" data-open-booking data-specialty="pediatria">
+                  Ver horarios <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="team-card" data-medico-id="camila-torres" data-reveal style="--reveal-delay: 140ms">
+              <div class="portrait portrait-lilac" aria-hidden="true">
+                <span class="portrait-halo"></span>
+                <span class="portrait-person person-three"><i></i><b></b></span>
+                <span class="portrait-plus">+</span>
+              </div>
+              <div class="team-body">
+                <div class="team-heading">
+                  <div>
+                    <p class="team-specialty" data-medico-especialidad>Cardiología</p>
+                    <h3 data-medico-nombre>Dra. Camila Torres</h3>
+                  </div>
+                  <span class="team-badge" title="Habilitación vigente">✓</span>
+                </div>
+                <dl class="team-meta">
+                  <div><dt>Registro</dt><dd data-medico-registro>RM 112376</dd></div>
+                  <div><dt>Horario</dt><dd data-medico-horario>Lun–Sáb · 8:00 a. m. – 12:00 m.</dd></div>
+                </dl>
+                <p class="team-note">Promoción de hábitos para el corazón.</p>
+                <button class="text-link" type="button" data-open-booking data-specialty="cardiologia">
+                  Ver horarios <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+
+            <article class="team-card" data-medico-id="nicolas-vega" data-reveal style="--reveal-delay: 210ms">
+              <div class="portrait portrait-mint" aria-hidden="true">
+                <span class="portrait-halo"></span>
+                <span class="portrait-person person-four"><i></i><b></b></span>
+                <span class="portrait-plus">+</span>
+              </div>
+              <div class="team-body">
+                <div class="team-heading">
+                  <div>
+                    <p class="team-specialty" data-medico-especialidad>Odontología</p>
+                    <h3 data-medico-nombre>Dr. Nicolás Vega</h3>
+                  </div>
+                  <span class="team-badge" title="Habilitación vigente">✓</span>
+                </div>
+                <dl class="team-meta">
+                  <div><dt>Registro</dt><dd data-medico-registro>RM 087540</dd></div>
+                  <div><dt>Horario</dt><dd data-medico-horario>Lun–Vie · 8:00 a. m. – 12:00 m.</dd></div>
+                </dl>
+                <p class="team-note">Cuidado oral con atención cercana.</p>
+                <button class="text-link" type="button" data-open-booking data-specialty="odontologia">
+                  Ver horarios <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <div class="credential-strip" data-reveal>
+            <div><span aria-hidden="true">◈</span><strong>Registro visible</strong><small>Cada perfil muestra su número de registro y habilitación.</small></div>
+            <div><span aria-hidden="true">◇</span><strong>Datos protegidos</strong><small>La demo no solicita información clínica real.</small></div>
+            <div><span aria-hidden="true">✦</span><strong>Atención humana</strong><small>Escucha, claridad y respeto en cada interacción.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="nosotros" class="section-space bg-white" aria-labelledby="care-title">
+        <div class="container care-grid">
+          <div class="care-visual" data-reveal aria-hidden="true">
+            <div class="care-circle care-circle-one"></div>
+            <div class="care-circle care-circle-two"></div>
+            <div class="care-heart">♡</div>
+            <div class="care-note"><span>+</span><strong>Bienestar<br />en el centro</strong></div>
+            <div class="care-pill care-pill-one"></div>
+            <div class="care-pill care-pill-two"></div>
+            <div class="care-credential"><span class="status-dot"></span> Propuesta académica transparente</div>
+          </div>
+
+          <div data-reveal style="--reveal-delay: 100ms">
+            <p class="eyebrow eyebrow-pill">Más que una consulta</p>
+            <h2 id="care-title" class="section-title">Creemos que cuidar también es saber escuchar.</h2>
+            <p class="section-lead">
+              Cada persona llega con una historia distinta. Por eso, nuestra
+              propuesta pone en el centro la comunicación clara, el respeto por
+              tus decisiones y una orientación que te ayude a sentirte acompañado.
+            </p>
+
+            <ul class="benefit-list">
+              <li class="benefit-item">
+                <span class="benefit-check" aria-hidden="true">✓</span>
+                <span><strong>Atención cercana</strong><small>Un trato amable, respetuoso y sin afanes.</small></span>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-check" aria-hidden="true">✓</span>
+                <span><strong>Información clara</strong><small>Orientación sencilla para que tomes decisiones informadas.</small></span>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-check" aria-hidden="true">✓</span>
+                <span><strong>Cuidado integral</strong><small>Una mirada que considera tu bienestar en conjunto.</small></span>
+              </li>
+            </ul>
+
+            <button class="button button-primary" type="button" data-open-booking>
+              Quiero agendar una cita <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="section-space testimonial-section" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow eyebrow-pill">Experiencias que inspiran</p>
+            <h2 id="testimonials-title">La confianza se construye escuchando</h2>
+            <p>Ejemplos de contenido ficticio para mostrar cómo podría verse esta sección.</p>
+          </div>
+
+          <div class="quotes-grid">
+            <figure class="quote-card" data-reveal>
+              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <blockquote>“Me sentí escuchada desde el primer momento. La explicación fue muy clara y amable.”</blockquote>
+              <figcaption>
+                <span class="quote-avatar avatar-a" aria-hidden="true">A</span>
+                <span><strong>Andrea M.</strong><small>Testimonio ficticio · demostración</small></span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card quote-card-featured" data-reveal style="--reveal-delay: 80ms">
+              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <blockquote>“Una experiencia tranquila. Me orientaron paso a paso y pude resolver mis dudas.”</blockquote>
+              <figcaption>
+                <span class="quote-avatar avatar-b" aria-hidden="true">J</span>
+                <span><strong>Julián P.</strong><small>Testimonio ficticio · demostración</small></span>
+              </figcaption>
+            </figure>
+
+            <figure class="quote-card" data-reveal style="--reveal-delay: 160ms">
+              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <blockquote>“La atención fue muy humana y me sentí acompañada durante toda la consulta.”</blockquote>
+              <figcaption>
+                <span class="quote-avatar avatar-c" aria-hidden="true">L</span>
+                <span><strong>Laura G.</strong><small>Testimonio ficticio · demostración</small></span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <p class="testimonial-note">
+            Los nombres, opiniones y calificaciones son completamente ficticios y
+            no corresponden a pacientes reales.
+          </p>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy" data-reveal>
+            <p class="eyebrow eyebrow-light eyebrow-pill">Estamos para orientarte</p>
+            <h2 id="contact-title">Hablemos de tu bienestar.</h2>
+            <p class="contact-lead">
+              Este proyecto es una demostración académica. No presta servicios
+              de salud ni recibe solicitudes reales de pacientes, pero puedes
+              probar el formulario y ver cómo se comportaría la experiencia.
+            </p>
+
+            <ul class="contact-info">
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">✉</span>
+                <div><span class="contact-label">Correo de demostración</span><span class="contact-value">hola@medicareplus.demo</span></div>
+              </li>
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">☎</span>
+                <div><span class="contact-label">Teléfono ficticio</span><span class="contact-value">+57 601 742 8800</span></div>
+              </li>
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">⌖</span>
+                <div><span class="contact-label">Dirección ficticia</span><span class="contact-value">Calle 45 # 12-30, Chapinero, Bogotá</span></div>
+              </li>
+              <li>
+                <span class="contact-item-icon" aria-hidden="true">◷</span>
+                <div><span class="contact-label">Horario simulado</span><span class="contact-value">Lun–Vie 8:00 a. m. – 6:00 p. m. · Sáb 8:00 a. m. – 12:00 m.</span></div>
+              </li>
+            </ul>
+
+            <div class="contact-map-block">
+              <div class="contact-map" role="img" aria-label="Mapa de referencia de Chapinero, Bogotá. Ubicación ficticia.">
+                <svg viewBox="0 0 420 220" aria-hidden="true">
+                  <rect width="420" height="220" fill="#e7f3f2" />
+                  <path d="M0 60h420M0 140h420M90 0v220M210 0v220M320 0v220" stroke="#c8e0dd" stroke-width="2" />
+                  <path d="M0 100h420M0 175h420M150 0v220M270 0v220M370 0v220" stroke="#d8ebe8" stroke-width="1.4" />
+                  <path d="M20 20h55v30H20zM230 75h70v45h-70zM290 160h60v40h-60zM30 150h45v50H30z" fill="#d7e9e5" />
+                  <path d="M100 0v220M320 0v220" stroke="#ffffff" stroke-width="6" opacity=".7" />
+                  <path d="M0 60h420M0 140h420" stroke="#ffffff" stroke-width="5" opacity=".7" />
+                  <circle cx="210" cy="110" r="28" fill="#087a9b" opacity=".12" />
+                  <path d="M210 78c-9 0-16 7-16 16 0 12 16 28 16 28s16-16 16-28c0-9-7-16-16-16Z" fill="#087a9b" />
+                  <circle cx="210" cy="94" r="6" fill="#fff" />
+                </svg>
+                <span class="map-label">Chapinero · Bogotá</span>
+              </div>
+              <a
+                class="text-link"
+                href="https://www.google.com/maps/search/?api=1&query=Chapinero+Bogota"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver mapa de referencia <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-card" data-reveal style="--reveal-delay: 100ms">
+            <div class="contact-form-head">
+              <p class="eyebrow">Formulario de prueba</p>
+              <h3>Escríbenos</h3>
+              <p>Valida los campos y observa el mensaje de éxito simulado. No se enviará ningún correo.</p>
+            </div>
+
+            <form class="contact-form" data-contact-form novalidate>
+              <div class="form-success" data-contact-success role="status" tabindex="-1" hidden>
+                <strong>Mensaje simulado.</strong> No se envió ningún correo ni se guardaron tus datos.
+              </div>
+
+              <div class="error-summary" data-contact-summary role="alert" tabindex="-1" hidden></div>
+
+              <label class="field">
+                <span class="field-label">Nombre completo</span>
+                <input id="contacto-nombre" class="input" type="text" name="nombre" autocomplete="name" placeholder="Tu nombre" required />
+                <span class="field-error" data-contact-error="nombre" hidden></span>
+              </label>
+
+              <label class="field">
+                <span class="field-label">Correo electrónico</span>
+                <input id="contacto-correo" class="input" type="email" name="correo" autocomplete="email" placeholder="nombre@correo.com" required />
+                <span class="field-error" data-contact-error="correo" hidden></span>
+              </label>
+
+              <label class="field">
+                <span class="field-label">Mensaje</span>
+                <textarea id="contacto-mensaje" class="input textarea" name="mensaje" rows="4" maxlength="600" placeholder="Cuéntanos qué te gustaría saber de la propuesta…" required></textarea>
+                <span class="field-help" data-contact-count>0/600</span>
+                <span class="field-error" data-contact-error="mensaje" hidden></span>
+              </label>
+
+              <div class="checkbox-row">
+                <input id="contacto-politica" type="checkbox" name="politica" required />
+                <div>
+                  <label for="contacto-politica">Acepto la política de tratamiento de datos de esta demostración.</label>
+                  <button class="link-button" type="button" data-open-policy>Leer la política</button>
+                </div>
+              </div>
+              <span class="field-error" data-contact-error="politica" hidden></span>
+
+              <button class="button button-primary w-full" type="submit">
+                Enviar mensaje de prueba <span aria-hidden="true">→</span>
+              </button>
+              <p class="form-note">Demostración académica · sin envío real · no ingreses datos personales.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="#inicio">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="brand-text">MediCare <span>Plus</span><small>Cuidado cercano</small></span>
+          </a>
+          <p>
+            Una propuesta académica sobre atención médica cercana, clara y
+            centrada en las personas. Todos los datos son ficticios.
+          </p>
+          <div class="footer-badges">
+            <span>ADSO · SENA</span>
+            <span>WCAG 2.1 AA</span>
+            <span>Vanilla JS</span>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Explora</h2>
+          <ul class="footer-list">
+            <li><a class="footer-link" href="#servicios">Especialidades</a></li>
+            <li><a class="footer-link" href="#como-funciona">Cómo funciona</a></li>
+            <li><a class="footer-link" href="#equipo">Nuestro equipo</a></li>
+            <li><a class="footer-link" href="#nosotros">Nuestra propuesta</a></li>
+            <li><a class="footer-link" href="#testimonios">Experiencias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Atención</h2>
+          <ul class="hours-list">
+            <li><span>Lunes a viernes</span><strong>8:00 a. m. – 6:00 p. m.</strong></li>
+            <li><span>Sábado</span><strong>8:00 a. m. – 12:00 m.</strong></li>
+            <li><span>Domingo</span><strong>Cerrado</strong></li>
+            <li><span>Duración</span><strong>30 minutos</strong></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="footer-heading">Contacto y proyecto</h2>
+          <ul class="footer-list">
+            <li><span class="footer-muted">Calle 45 # 12-30, Chapinero, Bogotá (ficticia)</span></li>
+            <li><span class="footer-muted">+57 601 742 8800 (ficticio)</span></li>
+            <li><span class="footer-muted">hola@medicareplus.demo</span></li>
+            <li><button class="footer-link" type="button" data-open-appointments>Mis citas <span class="count-badge count-badge-dark" data-appointments-count hidden>0</span></button></li>
+            <li><button class="footer-link" type="button" data-open-policy>Política de datos</button></li>
+            <li><button class="footer-link" type="button" data-replay-intro>Ver introducción</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 MediCare Plus · Proyecto académico ADSO.</p>
+          <p>Contenido demostrativo. No reemplaza orientación profesional de salud.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Agenda de demostración -->
+    <dialog
+      id="modal-cita"
+      class="modal booking-dialog"
+      data-booking-dialog
+      aria-labelledby="booking-title"
+    >
+      <div class="booking-shell">
+        <div class="booking-top">
+          <div>
+            <p class="eyebrow">Agenda en línea</p>
+            <h2 id="booking-title">Solicita tu cita</h2>
+            <p class="booking-subtitle">Demostración académica · sin datos reales</p>
+          </div>
+          <button class="icon-button" type="button" data-booking-close aria-label="Cerrar agendamiento">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="storage-warning" data-storage-warning role="alert" hidden>
+          Tu navegador está bloqueando el almacenamiento local. La agenda funcionará, pero la cita no se conservará al recargar.
+        </div>
+
+        <ol class="booking-steps" aria-label="Pasos del agendamiento">
+          <li class="is-active" data-step-indicator="1">
+            <span>1</span>
+            <div><strong>Especialidad</strong><small>y fecha</small></div>
+          </li>
+          <li data-step-indicator="2">
+            <span>2</span>
+            <div><strong>Horario</strong><small>disponible</small></div>
+          </li>
+          <li data-step-indicator="3">
+            <span>3</span>
+            <div><strong>Tus datos</strong><small>y confirmación</small></div>
+          </li>
+        </ol>
+
+        <form class="booking-form" data-booking-form novalidate>
+          <div class="booking-body">
+            <section class="booking-panel" data-booking-panel="1" aria-labelledby="step1-title">
+              <h3 id="step1-title" class="sr-only">Paso 1: especialidad y fecha</h3>
+
+              <div class="booking-grid">
+                <label class="field">
+                  <span class="field-label">Especialidad <em aria-hidden="true">*</em></span>
+                  <select id="cita-especialidad" class="input select" data-booking-specialty data-specialty-select required>
+                    <option value="">Selecciona una especialidad</option>
+                  </select>
+                  <span class="field-error" data-error-for="especialidad" hidden></span>
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Fecha preferida <em aria-hidden="true">*</em></span>
+                  <input id="cita-fecha" class="input" type="date" data-booking-date required />
+                  <span class="field-help" data-date-hint>Atendemos de lunes a sábado, hasta 90 días adelante.</span>
+                  <span class="field-error" data-error-for="fecha" hidden></span>
+                </label>
+              </div>
+
+              <div class="info-box">
+                <span class="info-icon" aria-hidden="true">◷</span>
+                <div>
+                  <strong>Horarios de atención</strong>
+                  <p>Lunes a viernes de 8:00 a. m. a 12:00 m. y de 2:00 a 6:00 p. m. Sábado de 8:00 a. m. a 12:00 m. Cada cita dura 30 minutos.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="booking-panel" data-booking-panel="2" aria-labelledby="step2-title" hidden>
+              <h3 id="step2-title" class="sr-only">Paso 2: elige tu horario</h3>
+
+              <div class="slot-summary">
+                <div>
+                  <p class="slot-summary-label">Tu selección</p>
+                  <p class="slot-summary-value">
+                    <span data-summary-specialty>—</span>
+                    <span aria-hidden="true">·</span>
+                    <span data-summary-date>—</span>
+                  </p>
+                </div>
+                <button class="link-button" type="button" data-booking-edit>Cambiar</button>
+              </div>
+
+              <p class="slots-count" data-booking-slots-count aria-live="polite"></p>
+
+              <div
+                class="slots"
+                data-booking-slots
+                role="group"
+                aria-label="Franjas horarias disponibles"
+                tabindex="-1"
+              ></div>
+
+              <div class="empty-state" data-booking-slots-empty hidden>
+                <span class="empty-icon" aria-hidden="true">◷</span>
+                <h4>No quedan cupos ese día</h4>
+                <p data-empty-hint>Prueba otra fecha o busca el siguiente día disponible.</p>
+                <button class="button button-secondary button-sm" type="button" data-booking-next-day>
+                  Ver siguiente día disponible
+                </button>
+              </div>
+
+              <span class="field-error" data-error-for="franja" hidden></span>
+            </section>
+
+            <section class="booking-panel" data-booking-panel="3" aria-labelledby="step3-title" hidden>
+              <h3 id="step3-title" class="sr-only">Paso 3: tus datos y confirmación</h3>
+
+              <div class="error-summary" data-booking-error-summary role="alert" tabindex="-1" hidden></div>
+              <div class="storage-warning" data-booking-storage-error role="alert" tabindex="-1" hidden></div>
+
+              <div class="summary-card">
+                <div class="summary-card-head">
+                  <h4>Resumen de tu cita</h4>
+                  <span class="status-pill">Por confirmar</span>
+                </div>
+                <dl class="summary-list">
+                  <div><dt>Especialidad</dt><dd data-summary-specialty>—</dd></div>
+                  <div><dt>Fecha</dt><dd data-summary-date>—</dd></div>
+                  <div><dt>Hora</dt><dd data-summary-time>—</dd></div>
+                  <div><dt>Profesional</dt><dd data-summary-doctor>Se asigna al elegir el horario</dd></div>
+                </dl>
+              </div>
+
+              <div class="booking-grid">
+                <label class="field">
+                  <span class="field-label">Nombre completo <em aria-hidden="true">*</em></span>
+                  <input id="cita-nombre" class="input" type="text" name="nombreCompleto" autocomplete="name" placeholder="Ej. Ana María Gómez" required />
+                  <span class="field-error" data-error-for="nombre" hidden></span>
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Documento <em aria-hidden="true">*</em></span>
+                  <input id="cita-documento" class="input" type="text" name="documento" inputmode="numeric" autocomplete="off" placeholder="6 a 10 dígitos" required />
+                  <span class="field-help">Sin puntos ni espacios.</span>
+                  <span class="field-error" data-error-for="documento" hidden></span>
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Teléfono <em aria-hidden="true">*</em></span>
+                  <input id="cita-telefono" class="input" type="tel" name="telefono" inputmode="tel" autocomplete="tel" placeholder="310 123 4567" required />
+                  <span class="field-help">10 dígitos, inicia en 3 o 7.</span>
+                  <span class="field-error" data-error-for="telefono" hidden></span>
+                </label>
+
+                <label class="field">
+                  <span class="field-label">Correo electrónico <em aria-hidden="true">*</em></span>
+                  <input id="cita-correo" class="input" type="email" name="correo" autocomplete="email" placeholder="nombre@correo.com" required />
+                  <span class="field-error" data-error-for="correo" hidden></span>
+                </label>
+              </div>
+
+              <div class="checkbox-row">
+                <input id="cita-politica" type="checkbox" name="politica" required />
+                <div>
+                  <label for="cita-politica">Acepto la política de tratamiento de datos de esta demostración.</label>
+                  <button class="link-button" type="button" data-open-policy>Leer la política</button>
+                </div>
+              </div>
+              <span class="field-error" data-error-for="politica" hidden></span>
+
+              <p class="form-note">
+                No ingreses datos reales de salud. La cita se guarda en el
+                almacenamiento local de este navegador.
+              </p>
+            </section>
+
+            <section class="booking-panel booking-success" data-booking-panel="success" aria-labelledby="success-title" hidden>
+              <div class="success-card" data-success-card tabindex="-1" role="status">
+                <span class="success-icon" aria-hidden="true">
+                  <svg viewBox="0 0 32 32" fill="none">
+                    <path d="m7 17 6 6L26 10" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <p class="eyebrow">Cita de demostración</p>
+                <h3 id="success-title">¡Todo listo!</h3>
+                <p>Tu cita quedó guardada en este navegador. Guarda el código para identificarla.</p>
+                <p class="success-id">Código <strong data-success-id>MED-2026-001</strong></p>
+
+                <dl class="success-details">
+                  <div><dt>Especialidad</dt><dd data-success-specialty>—</dd></div>
+                  <div><dt>Fecha y hora</dt><dd data-success-date>—</dd></div>
+                  <div><dt>Profesional</dt><dd data-success-doctor>—</dd></div>
+                  <div><dt>Paciente</dt><dd data-success-patient>—</dd></div>
+                </dl>
+
+                <div class="success-actions">
+                  <button class="button button-secondary button-sm" type="button" data-download-ics>
+                    Agregar a mi calendario
+                  </button>
+                  <button class="button button-primary button-sm" type="button" data-success-appointments>
+                    Ver mis citas
+                  </button>
+                </div>
+
+                <p class="form-note">No se envió ningún correo ni se notificó a un consultorio real.</p>
+              </div>
+            </section>
+          </div>
+
+          <div class="booking-footer">
+            <button class="button button-secondary" type="button" data-booking-back hidden>
+              <span aria-hidden="true">←</span> Volver
+            </button>
+            <span class="booking-footer-spacer"></span>
+            <button class="button button-primary" type="button" data-booking-next>
+              Continuar <span aria-hidden="true">→</span>
+            </button>
+            <button class="button button-primary" type="submit" data-booking-submit hidden>
+              Confirmar cita <span aria-hidden="true">✓</span>
+            </button>
+            <button class="button button-primary" type="button" data-booking-done hidden>
+              Cerrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Política de tratamiento de datos -->
+    <dialog
+      id="modal-politica"
+      class="modal policy-dialog"
+      data-policy-dialog
+      aria-labelledby="policy-title"
+    >
+      <div class="policy-shell">
+        <div class="policy-top">
+          <div>
+            <p class="eyebrow">Transparencia</p>
+            <h2 id="policy-title">Política de tratamiento de datos</h2>
+            <p>Versión simulada · proyecto académico ADSO</p>
+          </div>
+          <button class="icon-button" type="button" data-close-policy aria-label="Cerrar política de datos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="policy-content" tabindex="0">
+          <p class="policy-alert">
+            Este texto es una simulación académica. No constituye una política
+            legal real ni debe usarse con datos de salud verdaderos.
+          </p>
+
+          <h3>1. Qué datos recibe la demostración</h3>
+          <p>
+            El formulario de agenda solicita nombre completo, documento,
+            teléfono y correo electrónico. Estos datos se guardan únicamente en
+            el <code>localStorage</code> de tu navegador y se usan para mostrar
+            el resumen de la cita y la lista de “Mis citas”.
+          </p>
+
+          <h3>2. Dónde se almacenan</h3>
+          <p>
+            La información permanece en tu dispositivo bajo la clave
+            <code>medicareplus.citas.v1</code>. No se envía a un servidor, no se
+            comparte con terceros y no se utiliza para publicidad. Si borras los
+            datos del navegador, las citas desaparecen.
+          </p>
+
+          <h3>3. Datos que no debes ingresar</h3>
+          <p>
+            No ingreses información clínica, diagnósticos, datos de menores ni
+            documentos reales. Utiliza datos inventados para probar la
+            experiencia.
+          </p>
+
+          <h3>4. Seguridad</h3>
+          <p>
+            <code>localStorage</code> no es un almacenamiento seguro ni cifrado.
+            Cualquier persona con acceso al navegador podría leerlo. Por eso el
+            proyecto no debe usarse para gestionar citas reales.
+          </p>
+
+          <h3>5. Tus derechos</h3>
+          <p>
+            Puedes eliminar la información en cualquier momento desde la
+            configuración de tu navegador. Al no existir un servidor, no hay un
+            canal de solicitudes formales ni responsables de tratamiento reales.
+          </p>
+
+          <h3>6. Contacto de la demostración</h3>
+          <p>
+            Las dudas sobre el proyecto académico pueden dirigirse al correo
+            ficticio <strong>hola@medicareplus.demo</strong>. No se atienden
+            solicitudes médicas.
+          </p>
+        </div>
+
+        <div class="policy-footer">
+          <button class="button button-primary" type="button" data-close-policy>Entendido</button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Mis citas guardadas -->
+    <dialog
+      id="modal-citas"
+      class="modal appointments-dialog"
+      data-appointments-dialog
+      aria-labelledby="appointments-title"
+    >
+      <div class="appointments-shell">
+        <div class="appointments-top">
+          <div>
+            <p class="eyebrow">Tu historial de demostración</p>
+            <h2 id="appointments-title">Mis citas</h2>
+            <p>Guardadas solo en este navegador.</p>
+          </div>
+          <button class="icon-button" type="button" data-close-appointments aria-label="Cerrar mis citas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path stroke-linecap="round" d="m6 6 12 12M18 6 6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="appointments-body">
+          <div class="appointments-list" data-appointments-list></div>
+          <div class="empty-state appointments-empty" data-appointments-empty hidden>
+            <span class="empty-icon" aria-hidden="true">◷</span>
+            <h3>Todavía no tienes citas guardadas</h3>
+            <p>Agenda una cita de demostración y aparecerá aquí, incluso si recargas la página.</p>
+          </div>
+        </div>
+
+        <div class="appointments-footer">
+          <p class="form-note">Los datos son ficticios. Puedes borrarlos desde la configuración del navegador.</p>
+          <button class="button button-primary" type="button" data-appointments-new>
+            Agendar otra cita <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Introducción / bienvenida -->
+    <dialog class="intro-dialog" data-intro aria-labelledby="intro-title">
+      <div class="intro-shell">
+        <div class="intro-visual" aria-hidden="true">
+          <div class="intro-orb intro-orb-one"></div>
+          <div class="intro-orb intro-orb-two"></div>
+          <div class="intro-brand">
+            <span class="intro-mark">
+              <svg viewBox="0 0 32 32" fill="none">
+                <path d="M16 6v20M6 16h20" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+                <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="2" opacity=".45" />
+              </svg>
+            </span>
+            <span class="intro-brand-name">MediCare <em>Plus</em></span>
+            <span class="intro-brand-tag">Cuidado cercano, claro y humano.</span>
+          </div>
+          <div class="intro-pulse">
+            <span></span><span></span><span></span>
+          </div>
+          <p class="intro-visual-note">Proyecto académico ADSO · 2026</p>
+        </div>
+
+        <div class="intro-content">
+          <p class="eyebrow intro-eyebrow">Una presentación breve</p>
+          <h2 id="intro-title">Bienvenido a MediCare Plus</h2>
+
+          <div class="intro-slides">
+            <article class="intro-slide is-active" data-intro-slide>
+              <h3>Cuidado que empieza por escuchar</h3>
+              <p>Una experiencia de salud pensada para orientarte con claridad, respeto y calidez en cada paso.</p>
+            </article>
+            <article class="intro-slide" data-intro-slide hidden>
+              <h3>Agenda sin fricción</h3>
+              <p>Elige especialidad, fecha y horario. Confirma en tres pasos y guarda tu cita de demostración.</p>
+            </article>
+            <article class="intro-slide" data-intro-slide hidden>
+              <h3>Transparencia desde el inicio</h3>
+              <p>Este es un proyecto académico con datos ficticios. No se agenda una consulta real ni se envían correos.</p>
+            </article>
+          </div>
+
+          <div class="intro-dots" aria-label="Diapositivas de la introducción">
+            <button class="intro-dot is-active" type="button" data-intro-dot aria-label="Ver diapositiva 1" aria-current="true"></button>
+            <button class="intro-dot" type="button" data-intro-dot aria-label="Ver diapositiva 2" aria-current="false"></button>
+            <button class="intro-dot" type="button" data-intro-dot aria-label="Ver diapositiva 3" aria-current="false"></button>
+            <button class="intro-pause" type="button" data-intro-pause aria-label="Pausar presentación automática" aria-pressed="false">
+              <span aria-hidden="true">❚❚</span>
+            </button>
+          </div>
+
+          <div class="intro-actions">
+            <button class="button button-primary" type="button" data-intro-enter>
+              Entrar al sitio <span aria-hidden="true">→</span>
+            </button>
+            <button class="button button-secondary" type="button" data-intro-skip>
+              Saltar presentación
+            </button>
+          </div>
+
+          <ul class="intro-highlights" aria-label="Lo que encontrarás">
+            <li>4 especialidades</li>
+            <li>Agenda en 3 pasos</li>
+            <li>Accesible y responsive</li>
+          </ul>
+
+          <div class="intro-progress" aria-hidden="true"><span data-intro-progress></span></div>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
