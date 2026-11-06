@@ -25,9 +25,24 @@ PENDIENTE: URL pública de Vercel (aún no registrada en el repositorio).
 
 Para probar el proyecto localmente, usa `npm run dev` (ver [Cómo ejecutarlo](#cómo-ejecutarlo)).
 
+## Evidencias de aprendizaje
+
+- **Bitácora de prompts:** [`docs/BITACORA-PROMPTS.md`](docs/BITACORA-PROMPTS.md) reúne las herramientas de IA, los prompts y las correcciones registradas.
+- **Repositorio Git:** [matiasserrato156-dotcom/MediCarePlus](https://github.com/matiasserrato156-dotcom/MediCarePlus). El historial usa mensajes descriptivos con prefijos `feat:`, `fix:`, `docs:` y `chore:`.
+- **Demo desplegada:** [PEGA AQUÍ EL ENLACE DE LA DEMO]
+
 ## Herramientas de IA usadas
 
 El detalle de prompts, resultados, correcciones y evidencia está en [`docs/BITACORA-PROMPTS.md`](docs/BITACORA-PROMPTS.md).
+
+| Herramienta | Para qué la usé | Evidencia |
+|---|---|---|
+| ChatGPT | System Prompt y PRD; el detalle exacto figura como PENDIENTE en la bitácora. | `docs/SYSTEM-PROMPT.md`, `docs/Doc Requisitos del Producto PRD.md` |
+| OpenCode con DeepSeek V4.1 Flash Free | Auditoría de accesibilidad y correcciones de contraste, foco, ARIA y desborde móvil. | `docs/BITACORA-PROMPTS.md`; commit `71156be` |
+| Gemini | Generación de las imágenes del Hero y del equipo; **pendiente** de integrar. | `docs/PROMPTS-IMAGENES.md`; `public/img/` vacío |
+| Ollama | No utilizado. | — |
+| OpenRouter | No utilizado. | — |
+| Cursor | No utilizado. | — |
 
 ## Tecnologías
 
@@ -55,6 +70,8 @@ Git 2.56.0.windows.4
 
 ## Cómo ejecutarlo
 
+Requiere Node.js 22 (ver [Requisitos](#requisitos)).
+
 ```powershell
 npm install
 npm run dev
@@ -72,7 +89,7 @@ Opcional: `npm run preview` sirve localmente el contenido de `dist/`.
 ```text
 MediCarePlus/
 ├─ docs/                       Requisitos, decisiones, plan, bitácora y prompts
-│  ├─ evidencias/capturas/     Capturas de evidencia
+│  ├─ evidencias/capturas/     Capturas pendientes (solo .gitkeep)
 │  ├─ ARQUITECTURA.md
 │  ├─ BITACORA-PROMPTS.md
 │  ├─ DECISIONES.md
@@ -104,14 +121,23 @@ MediCarePlus/
 └─ README.md
 ```
 
-## Documentación
+## Documentación del proyecto
 
-- [`docs/DECISIONES.md`](docs/DECISIONES.md): requisitos vs. decisiones.
 - [`docs/ARQUITECTURA.md`](docs/ARQUITECTURA.md): alcance, flujo, datos y accesibilidad.
-- [`docs/PLAN-DE-TRABAJO.md`](docs/PLAN-DE-TRABAJO.md): fases y pruebas.
-- [`docs/BITACORA-PROMPTS.md`](docs/BITACORA-PROMPTS.md): evidencia de uso de IA.
-- [`docs/SYSTEM-PROMPT.md`](docs/SYSTEM-PROMPT.md): directrices del proyecto.
-- [`docs/PROMPTS-IMAGENES.md`](docs/PROMPTS-IMAGENES.md): prompts de las imágenes pendientes.
+- [`docs/DECISIONES.md`](docs/DECISIONES.md): requisitos vs. decisiones y propuestas.
+- [`docs/PLAN-DE-TRABAJO.md`](docs/PLAN-DE-TRABAJO.md): fases, tareas y pruebas.
+- [`docs/SYSTEM-PROMPT.md`](docs/SYSTEM-PROMPT.md): rol, stack y reglas del proyecto.
+- [`docs/Doc Requisitos del Producto PRD.md`](<docs/Doc Requisitos del Producto PRD.md>): requisitos del producto.
+- [`docs/Guía de Aprendizaje VibeCoding.pdf`](<docs/Guía de Aprendizaje VibeCoding.pdf>): guía académica de referencia.
+- [`docs/PROMPTS-IMAGENES.md`](docs/PROMPTS-IMAGENES.md): prompts de las cinco imágenes pendientes.
+- [`docs/BITACORA-PROMPTS.md`](docs/BITACORA-PROMPTS.md): bitácora de uso de IA (también en Evidencias de aprendizaje).
+
+## Estado y pendientes
+
+- **Imágenes de Gemini:** pendientes de generar e integrar. Faltan el banner del Hero (`public/img/hero-recepcion-clinica.jpg`) y los cuatro retratos del equipo (`public/img/equipo/doctora-medicina-general.jpg`, `doctor-pediatria.jpg`, `doctora-cardiologia.jpg`, `doctor-odontologia.jpg`). `public/img/` y `public/img/equipo/` están vacías.
+- **Capturas de pantalla:** pendientes en `docs/evidencias/capturas/`; por ahora la carpeta solo contiene `.gitkeep`.
+- **URL de la demo:** pendiente de pegar el enlace de Vercel en este README.
+- **Bitácora:** quedan datos por completar (prompt y respuesta de ChatGPT, intentos de Gemini y evidencia de la auditoría).
 
 ## Accesibilidad
 
@@ -119,7 +145,7 @@ Objetivo: **WCAG 2.1 AA**. Incluye HTML semántico, navegación por teclado, eti
 
 ## Aviso
 
-- Todos los datos son ficticios.
+- Todos los datos de pacientes y médicos son ficticios.
 - `localStorage` no es seguro ni cifrado.
 - No se deben ingresar datos reales de pacientes.
 - El formulario de contacto es simulado: no envía correos.
