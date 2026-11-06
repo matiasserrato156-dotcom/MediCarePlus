@@ -71,7 +71,7 @@ export function getAvailability(especialidadId, dateStr, citas = []) {
 export function findNextAvailability(
   especialidadId,
   citas = [],
-  maxDays = 30,
+  maxDays = CONFIG.maxDaysAhead,
   startDate = todayISO(),
 ) {
   for (let offset = 0; offset <= maxDays; offset += 1) {
@@ -89,7 +89,7 @@ export function findNextAvailability(
 }
 
 /** Primera franja libre entre todas las especialidades (para el Hero). */
-export function findNextGlobalAvailability(citas = [], maxDays = 30) {
+export function findNextGlobalAvailability(citas = [], maxDays = CONFIG.maxDaysAhead) {
   let best = null;
 
   for (const especialidad of ESPECIALIDADES) {
@@ -109,7 +109,7 @@ export function findNextGlobalAvailability(citas = [], maxDays = 30) {
 export function findNextDateWithAvailability(
   especialidadId,
   citas = [],
-  maxDays = 90,
+  maxDays = CONFIG.maxDaysAhead,
   startDate = todayISO(),
 ) {
   const next = findNextAvailability(especialidadId, citas, maxDays, startDate);

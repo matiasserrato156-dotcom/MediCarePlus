@@ -1,3 +1,4 @@
+import { CONFIG } from '../config.js';
 import { getEspecialidad } from '../data/especialidades.js';
 import { readAppointments, saveAppointment, StorageError, storageAvailable } from './almacenamiento.js';
 import { closeDialog, openDialog, setupDialog } from './modal.js';
@@ -562,7 +563,7 @@ function updateNextAvailability() {
   const next = findNextGlobalAvailability(readAppointments());
 
   if (!next) {
-    label.textContent = 'Sin cupos en los próximos 30 días';
+    label.textContent = `Sin cupos en los próximos ${CONFIG.maxDaysAhead} días`;
     if (button) {
       delete button.dataset.specialty;
       delete button.dataset.date;

@@ -83,7 +83,7 @@
       </div>
     </header>
 
-    <main id="contenido">
+    <main id="contenido" tabindex="-1">
       <section id="inicio" class="hero-section" aria-labelledby="hero-title">
         <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
         <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
@@ -120,20 +120,20 @@
 
               <dl class="hero-metrics" aria-label="Cifras de la propuesta">
                 <div class="metric">
-                  <dt class="metric-value">4</dt>
-                  <dd class="metric-label">especialidades</dd>
+                  <dt class="metric-label">especialidades</dt>
+                  <dd class="metric-value">4</dd>
                 </div>
                 <div class="metric">
-                  <dt class="metric-value">30 min</dt>
-                  <dd class="metric-label">por consulta</dd>
+                  <dt class="metric-label">por consulta</dt>
+                  <dd class="metric-value">30 min</dd>
                 </div>
                 <div class="metric">
-                  <dt class="metric-value">90</dt>
-                  <dd class="metric-label">días para agendar</dd>
+                  <dt class="metric-label">días para agendar</dt>
+                  <dd class="metric-value">90</dd>
                 </div>
                 <div class="metric">
-                  <dt class="metric-value">100%</dt>
-                  <dd class="metric-label">transparente</dd>
+                  <dt class="metric-label">transparente</dt>
+                  <dd class="metric-value">100%</dd>
                 </div>
               </dl>
             </div>
@@ -573,7 +573,7 @@
 
           <div class="quotes-grid">
             <figure class="quote-card" data-reveal>
-              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <div class="quote-stars" role="img" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
               <blockquote>“Me sentí escuchada desde el primer momento. La explicación fue muy clara y amable.”</blockquote>
               <figcaption>
                 <span class="quote-avatar avatar-a" aria-hidden="true">A</span>
@@ -582,7 +582,7 @@
             </figure>
 
             <figure class="quote-card quote-card-featured" data-reveal style="--reveal-delay: 80ms">
-              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <div class="quote-stars" role="img" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
               <blockquote>“Una experiencia tranquila. Me orientaron paso a paso y pude resolver mis dudas.”</blockquote>
               <figcaption>
                 <span class="quote-avatar avatar-b" aria-hidden="true">J</span>
@@ -591,7 +591,7 @@
             </figure>
 
             <figure class="quote-card" data-reveal style="--reveal-delay: 160ms">
-              <div class="quote-stars" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
+              <div class="quote-stars" role="img" aria-label="Calificación demostrativa de cinco estrellas">★★★★★</div>
               <blockquote>“La atención fue muy humana y me sentí acompañada durante toda la consulta.”</blockquote>
               <figcaption>
                 <span class="quote-avatar avatar-c" aria-hidden="true">L</span>
@@ -677,24 +677,24 @@
 
               <div class="error-summary" data-contact-summary role="alert" tabindex="-1" hidden></div>
 
-              <label class="field">
-                <span class="field-label">Nombre completo</span>
+              <div class="field">
+                <label class="field-label" for="contacto-nombre">Nombre completo</label>
                 <input id="contacto-nombre" class="input" type="text" name="nombre" autocomplete="name" placeholder="Tu nombre" required />
                 <span class="field-error" data-contact-error="nombre" hidden></span>
-              </label>
+              </div>
 
-              <label class="field">
-                <span class="field-label">Correo electrónico</span>
+              <div class="field">
+                <label class="field-label" for="contacto-correo">Correo electrónico</label>
                 <input id="contacto-correo" class="input" type="email" name="correo" autocomplete="email" placeholder="nombre@correo.com" required />
                 <span class="field-error" data-contact-error="correo" hidden></span>
-              </label>
+              </div>
 
-              <label class="field">
-                <span class="field-label">Mensaje</span>
+              <div class="field">
+                <label class="field-label" for="contacto-mensaje">Mensaje</label>
                 <textarea id="contacto-mensaje" class="input textarea" name="mensaje" rows="4" maxlength="600" placeholder="Cuéntanos qué te gustaría saber de la propuesta…" required></textarea>
                 <span class="field-help" data-contact-count>0/600</span>
                 <span class="field-error" data-contact-error="mensaje" hidden></span>
-              </label>
+              </div>
 
               <div class="checkbox-row">
                 <input id="contacto-politica" type="checkbox" name="politica" required />
@@ -825,20 +825,20 @@
               <h3 id="step1-title" class="sr-only">Paso 1: especialidad y fecha</h3>
 
               <div class="booking-grid">
-                <label class="field">
-                  <span class="field-label">Especialidad <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-especialidad">Especialidad <em aria-hidden="true">*</em></label>
                   <select id="cita-especialidad" class="input select" data-booking-specialty data-specialty-select required>
                     <option value="">Selecciona una especialidad</option>
                   </select>
                   <span class="field-error" data-error-for="especialidad" hidden></span>
-                </label>
+                </div>
 
-                <label class="field">
-                  <span class="field-label">Fecha preferida <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-fecha">Fecha preferida <em aria-hidden="true">*</em></label>
                   <input id="cita-fecha" class="input" type="date" data-booking-date required />
                   <span class="field-help" data-date-hint>Atendemos de lunes a sábado, hasta 90 días adelante.</span>
                   <span class="field-error" data-error-for="fecha" hidden></span>
-                </label>
+                </div>
               </div>
 
               <div class="info-box">
@@ -907,31 +907,31 @@
               </div>
 
               <div class="booking-grid">
-                <label class="field">
-                  <span class="field-label">Nombre completo <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-nombre">Nombre completo <em aria-hidden="true">*</em></label>
                   <input id="cita-nombre" class="input" type="text" name="nombreCompleto" autocomplete="name" placeholder="Ej. Ana María Gómez" required />
                   <span class="field-error" data-error-for="nombre" hidden></span>
-                </label>
+                </div>
 
-                <label class="field">
-                  <span class="field-label">Documento <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-documento">Documento <em aria-hidden="true">*</em></label>
                   <input id="cita-documento" class="input" type="text" name="documento" inputmode="numeric" autocomplete="off" placeholder="6 a 10 dígitos" required />
                   <span class="field-help">Sin puntos ni espacios.</span>
                   <span class="field-error" data-error-for="documento" hidden></span>
-                </label>
+                </div>
 
-                <label class="field">
-                  <span class="field-label">Teléfono <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-telefono">Teléfono <em aria-hidden="true">*</em></label>
                   <input id="cita-telefono" class="input" type="tel" name="telefono" inputmode="tel" autocomplete="tel" placeholder="310 123 4567" required />
                   <span class="field-help">10 dígitos, inicia en 3 o 7.</span>
                   <span class="field-error" data-error-for="telefono" hidden></span>
-                </label>
+                </div>
 
-                <label class="field">
-                  <span class="field-label">Correo electrónico <em aria-hidden="true">*</em></span>
+                <div class="field">
+                  <label class="field-label" for="cita-correo">Correo electrónico <em aria-hidden="true">*</em></label>
                   <input id="cita-correo" class="input" type="email" name="correo" autocomplete="email" placeholder="nombre@correo.com" required />
                   <span class="field-error" data-error-for="correo" hidden></span>
-                </label>
+                </div>
               </div>
 
               <div class="checkbox-row">

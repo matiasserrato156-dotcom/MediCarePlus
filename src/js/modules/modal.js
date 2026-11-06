@@ -47,12 +47,15 @@ function restoreState(dialog) {
 export function closeDialog(dialog) {
   if (!dialog) return;
 
-  if (typeof dialog.close === 'function' && dialog.open) {
-    dialog.close();
-  } else {
-    dialog.removeAttribute('open');
-    restoreState(dialog);
+  if (typeof dialog.close === 'function') {
+    if (dialog.open) dialog.close();
+    return;
   }
+
+  if (!dialog.hasAttribute('open')) return;
+
+  dialog.removeAttribute('open');
+  restoreState(dialog);
 }
 
 /**

@@ -1152,7 +1152,7 @@
 }
 
 .input::placeholder {
-  color: #8399a1;
+  color: #5f757e;
 }
 
 .input:hover {
@@ -1161,7 +1161,8 @@
 
 .input:focus {
   border-color: var(--color-brand);
-  outline: 2px solid transparent;
+  outline: 3px solid #bd6e1e;
+  outline-offset: 3px;
   box-shadow: 0 0 0 4px #087a9b24;
 }
 
@@ -2003,7 +2004,7 @@
 }
 
 .quote-stars {
-  color: #b06d1f;
+  color: #9a5b12;
   font-size: 0.85rem;
   letter-spacing: 0.13em;
 }
@@ -2131,7 +2132,7 @@
 .contact-lead {
   max-width: 34rem;
   margin: 1rem 0 0;
-  color: #e0f1f4;
+  color: #ffffff;
   font-size: 0.95rem;
   line-height: 1.8;
 }
@@ -2170,7 +2171,7 @@
 }
 
 .contact-label {
-  color: #a9d3dc;
+  color: #ffffff;
   font-size: 0.64rem;
   font-weight: 750;
   letter-spacing: 0.08em;
@@ -2715,7 +2716,7 @@ dialog.intro-dialog[open] {
 }
 
 .slot.is-selected small {
-  color: #d7eff4;
+  color: #eef9fb;
 }
 
 .slot:disabled {
@@ -3609,6 +3610,7 @@ dialog.intro-dialog {
 
   .hero-art {
     min-height: 320px;
+    aspect-ratio: auto;
   }
 
   .art-card {
